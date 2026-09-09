@@ -123,25 +123,43 @@
       color: var(--accent-coral);
     }
 
-    .img-center {
+    .img-content {
       display: block;
       max-width: 100%;
-      height: auto;
+      max-height: 400px;
+      object-fit: contain;
       margin: 1.5rem auto;
       border-radius: 8px;
       border: 1px solid var(--border-glow);
     }
 
+    .img-inline {
+      max-width: 180px;
+      height: auto;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0.5rem;
+    }
+
+    .grid-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
     .aesthetic-fish-top {
-      width: 140px;
+      width: 120px;
       position: absolute;
-      top: -20px;
+      top: -15px;
       right: 20px;
       opacity: 0.85;
     }
 
     .aesthetic-star {
-      width: 80px;
+      width: 70px;
       position: absolute;
       bottom: 15px;
       right: 20px;
@@ -166,7 +184,7 @@
 
   <div class="container">
 
-    <!-- DIAPOSITIVA 1: PRESENTACIÓN Y SOBRE MÍ -->
+    <!-- DIAPOSITIVA 1: SOBRE MÍ -->
     <section>
       <img src="images/pecesito.png" alt="Pez Guppy" class="aesthetic-fish-top">
       
@@ -187,7 +205,7 @@
       <img src="images/estrella.png" alt="Estrella de Mar" class="aesthetic-star">
     </section>
 
-    <!-- DIAPOSITIVA 2: TAREA I -->
+    <!-- DIAPOSITIVA 2: TAREA I (CV & Elevator Pitch) -->
     <section>
       <h2 class="section-title">TAREA I</h2>
       <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">CECILIA GUADALUPE TORRES CASTAÑEDA</h3>
@@ -200,6 +218,7 @@
           <li><strong>Aprendizajes:</strong> Capacidad para jerarquizar información laboral relevantes, redacción sintética orientada a logros, uso de palabras clave del sector y diseño visual limpio y profesional de un perfil laboral.</li>
           <li><strong>Aplicabilidad en el futuro profesional o laboral:</strong> Indispensable para la inserción y crecimiento en el mercado de trabajo, postulación a vacantes laborales, convocatorias académicas, becas y proyectos de consultoría o freelance.</li>
         </ul>
+        <img src="images/CV.jpeg" alt="Currículum Vitae" class="img-content">
       </div>
 
       <div class="sub-box">
@@ -210,11 +229,12 @@
           <li><strong>Aprendizajes:</strong> Desarrollo de síntesis discursiva, capacidad de argumentación bajo presión de tiempo, proyección de voz, lenguaje corporal persuasivo y estructura de mensajes de alto impacto (problema, solución y gancho).</li>
           <li><strong>Aplicabilidad en el futuro profesional o laboral:</strong> Esencial para entrevistas de trabajo, rondas de financiamiento, prospección de clientes, presentaciones de proyectos a directivos y redes de contactos (networking).</li>
         </ul>
+        <img src="images/Elevator-speech.png" alt="Elevator Pitch" class="img-content">
         <p style="margin-top: 1rem;"><strong>Elevator Pitch:</strong> <a href="https://drive.google.com/file/d/1X1IRK2rTDgq9R7-vQJ2g-S5XN0hcWuKe/view?usp=sharing" target="_blank">Ver Video en Google Drive</a></p>
       </div>
     </section>
 
-    <!-- DIAPOSITIVA 3: TAREA II -->
+    <!-- DIAPOSITIVA 3: TAREA II (Ficha de Lectura) -->
     <section>
       <h2 class="section-title">TAREA II - FICHA DE LECTURA</h2>
       
@@ -224,9 +244,14 @@
         <li><strong>Aprendizajes:</strong> Desarrollo de lectura crítica, habilidad para extractar ideas centrales, técnicas de resumen y esquematización, e identificación de la postura e intención del autor.</li>
         <li><strong>Aplicabilidad en el futuro profesional o laboral:</strong> Útil para la investigación documental, elaboración de informes técnicos, análisis de normativas o mercado, preparación de diagnósticos empresariales y fundamentación teórica de proyectos laborales.</li>
       </ul>
+
+      <div class="grid-images">
+        <img src="images/libro.png" alt="Elemento Libro" class="img-inline">
+        <img src="images/texto.jpeg" alt="Ficha de Lectura - Texto" class="img-content" style="max-width: 600px; margin: 0;">
+      </div>
     </section>
 
-    <!-- DIAPOSITIVA 4: TAREA III -->
+    <!-- DIAPOSITIVA 4: TAREA III (Organizador Visual) -->
     <section>
       <h2 class="section-title">TAREA III - ORGANIZADOR VISUAL</h2>
       
@@ -236,6 +261,11 @@
         <li><strong>Aprendizajes:</strong> Capacidad para abstraer y categorizar conceptos, sintetizar lecturas técnicas o teóricas en esquemas claros, e identificar la estructura argumentativa de un texto (tema, propósito, idea principal, datos relevantes e inferencias).</li>
         <li><strong>Aplicabilidad en el futuro profesional o laboral:</strong> Útil para la fase de ideación y planificación de proyectos, estructuración de presentaciones ejecutivas, síntesis de datos para equipos multidisciplinarios y sistematización de procesos complejos dentro de una empresa o industria.</li>
       </ul>
+
+      <div class="grid-images">
+        <img src="images/engranajes.png" alt="Engranajes" class="img-inline">
+        <img src="images/Ingeneria.png" alt="Ingeniería Mecatrónica Organizador Visual" class="img-content" style="max-width: 600px; margin: 0;">
+      </div>
 
       <div class="sub-box">
         <h3>Mecatrónica y su Importancia en la Sociedad</h3>
@@ -249,7 +279,7 @@
       </div>
     </section>
 
-    <!-- DIAPOSITIVA 5: TAREA IV -->
+    <!-- DIAPOSITIVA 5: TAREA IV (Póster Científico) -->
     <section>
       <h2 class="section-title">TAREA IV - RESEÑA O PÓSTER CIENTÍFICO</h2>
       
@@ -259,6 +289,8 @@
         <li><strong>Aprendizajes:</strong> Habilidad para sintetizar extensos informes de investigación, jerarquización de información visual y textual, diseño de gráficos informativos, y capacidad de exposición clara y concisa ante un auditorio.</li>
         <li><strong>Aplicabilidad en el futuro profesional o laboral:</strong> Indispensable para la participación en congresos, simposios y ferias de innovación, presentación de avances de I+D (Investigación y Desarrollo) en empresas, y divulgación de proyectos o diagnósticos técnicos ante comités ejecutivos.</li>
       </ul>
+
+      <img src="images/poster.png" alt="Póster Científico - Riego Digital" class="img-content">
 
       <div class="sub-box">
         <h3 style="color: var(--accent-gold);">Riego Digital: Automatización Agrícola en Tiempo Real Mediante Tecnologías de Información</h3>
@@ -276,7 +308,7 @@
       </div>
     </section>
 
-    <!-- DIAPOSITIVA 6: TAREA V -->
+    <!-- DIAPOSITIVA 6: TAREA V (Podcast) -->
     <section>
       <h2 class="section-title">TAREA V - PODCAST</h2>
       
@@ -290,7 +322,7 @@
       <p style="margin-top: 1rem;"><strong>Video / Audio:</strong> <a href="https://drive.google.com/file/d/1iXeCISdAUGJW53DqCERwci74tCzwjTEe/view?usp=sharing" target="_blank">Ver Video en Google Drive</a></p>
     </section>
 
-    <!-- DIAPOSITIVA 7: TAREA VI -->
+    <!-- DIAPOSITIVA 7: TAREA VI (Entrada de Blog) -->
     <section>
       <h2 class="section-title">TAREA VI - ENTRADA DE BLOG</h2>
       
@@ -305,6 +337,11 @@
         <li><strong>Aprendizajes:</strong> Dominio del tono de redacción web, aplicación de técnicas de copywriting, estructuración de contenidos mediante títulos jerárquicos y optimización de la claridad discursiva para medios digitales.</li>
         <li><strong>Aplicabilidad en el futuro profesional o laboral:</strong> Esencial para la gestión de estrategias de marketing de contenidos, posicionamiento SEO de marcas o empresas, comunicación corporativa externa y desarrollo del perfil profesional a través de blogs especializados.</li>
       </ul>
+
+      <div class="grid-images">
+        <img src="images/historia.png" alt="Imagen Blog Historia" class="img-content" style="max-width: 500px; margin: 0;">
+        <img src="images/cinco.png" alt="Elemento de Blog" class="img-inline">
+      </div>
     </section>
 
     <!-- DIAPOSITIVA 8: MAPA CONCEPTUAL -->
@@ -318,6 +355,11 @@
         <li><strong>Aplicabilidad en el futuro profesional o laboral:</strong> Útil para la arquitectura de información en proyectos, diseño de procesos organizacionales, elaboración de manuales técnicos, planificación de estrategias de negocio y sistematización de flujos de trabajo.</li>
       </ul>
 
+      <div class="grid-images">
+        <img src="images/conceptual.png" alt="Mapa Conceptual - La IA en la Educación" class="img-content" style="max-width: 600px; margin: 0;">
+        <img src="images/diccionario.png" alt="Elemento Diccionario" class="img-inline">
+      </div>
+
       <div class="sub-box">
         <h3>La IA en la Educación</h3>
         <p>Se centra en:</p>
@@ -328,7 +370,7 @@
         </ul>
       </div>
 
-      <img src="images/pecesitos.png" alt="Pez Payaso" class="img-center" style="max-width: 250px;">
+      <img src="images/pecesitos.png" alt="Pez Payaso" class="img-inline" style="display: block; margin: 1rem auto 0 auto;">
     </section>
 
     <!-- DIAPOSITIVA 9: MAPA MENTAL -->
@@ -342,6 +384,12 @@
         <li><strong>Aplicabilidad en el futuro profesional o laboral:</strong> Permite esquematizar proyectos, planificar estrategias de comunicación, realizar sesiones de lluvia de ideas (brainstorming) en equipo y presentar información técnica de forma clara y accesible para clientes o colaboradores.</li>
       </ul>
 
+      <div class="grid-images">
+        <img src="images/nubes.png" alt="Elemento Nubes" class="img-inline">
+        <img src="images/mental.png" alt="Mapa Mental Mecatrónica" class="img-content" style="max-width: 500px; margin: 0;">
+        <img src="images/cuadros.png" alt="Elemento Cuadros" class="img-inline">
+      </div>
+
       <div class="sub-box">
         <h3>Ingeniería Mecatrónica</h3>
         <ul>
@@ -351,10 +399,10 @@
         </ul>
       </div>
 
-      <img src="images/pecesitos.png" alt="Pez Payaso" class="img-center" style="max-width: 250px;">
+      <img src="images/pecesitos.png" alt="Pez Payaso" class="img-inline" style="display: block; margin: 1rem auto 0 auto;">
     </section>
 
-    <!-- DIAPOSITIVA 10: ACTIVIDAD PADLET - PRÁCTICA II -->
+    <!-- DIAPOSITIVA 10: ACTIVIDAD PADLET - PRÁCTICA II (Dicción) -->
     <section>
       <h2 class="section-title">ACTIVIDAD PADLET - PRÁCTICA II</h2>
       <h3 style="color: var(--accent-gold);">DICCIÓN</h3>
@@ -365,6 +413,11 @@
         <li><strong>Aprendizajes:</strong> Fortalecimiento de los músculos (lengua, labios y mandíbula), mayor conciencia sobre la vocalización de las consonantes y desarrollo de control respiratorio para sostener la dicción sin tensión muscular excesiva.</li>
         <li><strong>Aplicabilidad en el futuro profesional o laboral:</strong> Fundamental para hablar en público, realizar presentaciones ejecutivas de alto impacto, grabar contenido audiovisual o podcasts, moderar reuniones de trabajo y mantener una comunicación oral fluida, con autoridad y sin trabas fonéticas.</li>
       </ul>
+
+      <div class="grid-images">
+        <img src="images/habla.png" alt="Elemento Habla" class="img-inline">
+        <img src="images/diccion.png" alt="Elemento Dicción" class="img-inline">
+      </div>
     </section>
 
   </div>
